@@ -1,3 +1,14 @@
+# call this to add a directory to the PATH if it exists and is not already in the PATH
+# usage: safely_add_to_path /path/to/dir
+safely_add_to_path() {
+  local dir="$1"
+  if [[ -d "$dir" && ! ":$PATH:" == *":$dir:"* ]]; then
+    export PATH="$dir:$PATH"
+  fi
+}
+
+safely_add_to_path "$HOME/.local/bin"
+
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
