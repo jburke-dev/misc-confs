@@ -22,6 +22,7 @@ ZSH_CUSTOM=~/confs/zsh-config
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zoxide git-prompt nvm zsh-autosuggestions fzf)
+# note that zsh-syntax-highlighting must be last
+plugins=(git zoxide git-prompt nvm zsh-autosuggestions fzf zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
