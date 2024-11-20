@@ -12,8 +12,10 @@ safely_add_to_path "$HOME/.local/bin"
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+export SPACESHIP_CONFIG="$HOME/confs/misc-confs/.spaceshiprc.zsh"
+
 # This is empty since I'm using either my own prompt or a prompt engine
-ZSH_THEME=""
+ZSH_THEME="spaceship"
 
 zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
