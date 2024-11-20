@@ -12,7 +12,7 @@ safely_add_to_path "$HOME/.local/bin"
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# This is empty since I'm using either my own prompt or a prompt engine
+export TYPEWRITTEN_PROMPT_LAYOUT="pure"
 ZSH_THEME="typewritten"
 
 zstyle ':omz:update' mode reminder  # just remind me to update when it's time
